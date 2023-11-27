@@ -4,6 +4,12 @@ This CLI tool saves in a directory all versions of a file that were committed to
 
 _Note: Current version only works for JSON files._
 
+To install, create a virtual Python environment with version 3.11, activate it, and run the following `pip install`:
+
+```console
+$ pip install git+https://github.com/kat-kel/download-git-history.git
+```
+
 # Save versions committed to Git repository
 
 Use the command `gethist` to iterate through all versions of a file committed to a git repository and save them inside a folder. Each version is written to a file whose name is composed of (a) the date of the commit, (b) timestamp of the commit, and (c) the commit's ID.
