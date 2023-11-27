@@ -6,12 +6,7 @@ import click
 from src.get_history import GitRepo
 
 
-@click.group()
-def cli():
-    pass
-
-
-@cli.command("get-history")
+@click.command("get-history")
 @click.option(
     "--output",
     type=click.Path(dir_okay=True, file_okay=False),
@@ -28,7 +23,7 @@ def cli():
     multiple=True,
     help="Target file's path relative to the git repository.",
 )
-def get_history(output, repo, relative_file_name):
+def cli(output, repo, relative_file_name):
     git_repo = GitRepo(repo)
     outdir = Path(output)
     outdir.mkdir(exist_ok=True, parents=True)

@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Generator
 
@@ -36,7 +37,10 @@ class GitRepo:
                 extension = Path(relative_file_path).suffix
                 commit_hex = info[2]
                 commit_date = info[1]
-                output_stem = f"{commit_date[:10]}_{commit_hex}{extension}"
+                commit_timestamp = datetime.fromisoformat(commit_date).timestamp()
+                output_stem = (
+                    f"{commit_date[:10]}_{commit_timestamp}_{commit_hex}{extension}"
+                )
                 yield output_stem, self.git_repo.git.execute(
                     [
                         "git",
