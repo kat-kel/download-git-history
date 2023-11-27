@@ -58,7 +58,9 @@ $ gethist --output ./versions --repo ../git-repo --relative-file-name data/enric
         |___enriched-urls.jon
 |___compile-history/ (CWD)
     |___committed-data/
-        |___2023-05-08_0943ad63bdf7766045d8c2b811cd945923feb2ee.json
-        |___2023-05-09_562034382306237e3ea477e7af92fa38abbccb86.json
-        |___2023-05-10_8c127f5aade58665b43e289cabf40e5c17202b64.json
+        |___2023-10-23_1698060560.0_723cf1cc67abc66aec6e944db33fbd4909d8bc9a.json
+        |___2023-10-23_1698061018.0_666f03899cc7cdd9cb63573df2642f6a2ec3dc68.json
+        |___2023-10-24_1698117091.0_76de23c221b08d1ff2945a07a6528e2722ca30c4.json
+        |___2023-10-25_1698203473.0_a308fe7493cd843d5da7150f2f3c630f1bc34571.json
+        |___2023-10-26_1698289893.0_27ba55bff8a2096465bedec31ce3e0bb188ab4ac.json
 ```
